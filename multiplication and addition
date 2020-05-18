@@ -1,0 +1,79 @@
+//Multiplication of matrix
+package samplehello;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author charu
+ */
+public class TestArray {
+    public static void main(String[] args){
+        int m1[][] = {{1,3,4},{2,4,3},{3,4,5}};
+        int m2[][] = {{1,3,4},{2,4,3},{3,4,5}};
+        int r[][] = new int[3][3];
+        int sum = 0;
+        
+        for(int i=0;i<3;i++)
+        {
+            for(int j=0;j<3;j++)
+            {
+                for(int k=0;k<3;k++)
+                {
+                    sum = sum + m1[i][k]*m2[k][j];
+                }
+                r[i][j]=sum;
+                sum=0;
+            }
+        }
+        for(int i=0;i<3;i++)
+        {
+            for(int j=0;j<3;j++)
+            {
+                System.out.print(r[i][j] + " ");
+            }
+            System.out.println();
+        }
+        
+    }
+ }
+ 
+ 
+ //ADDITION OF MATRICES
+ package samplehello;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author charu
+ */
+public class TestArray {
+    public static void main(String[] args){
+        int m1[][] = {{1,3,4},{2,4,3},{3,4,5}};
+        int m2[][] = {{1,3,4},{2,4,3},{1,2,4}};
+        int r[][] = new int[3][3];
+        
+        
+        for(int i=0;i<3;i++)
+        {
+            for(int j=0;j<3;j++)
+            {
+                r[i][j] = m1[i][j]+m2[i][j];
+            }
+        }
+        for(int i=0;i<3;i++)
+        {
+            for(int j=0;j<3;j++)
+            {
+                System.out.print(r[i][j] + " ");
+            }
+            System.out.println();
+        }
+        
+        
+    }
+ }
+
+
+
